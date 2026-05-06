@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 195 40% 95%; /* Whisper Blue #ECF6F9 */
+    --foreground: 195 80% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 195 80% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 195 80% 10%;
+    --primary: 195 75% 50%; /* Arctic Blue #21AFDE */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 195 30% 90%;
+    --secondary-foreground: 195 80% 20%;
+    --muted: 195 20% 90%;
+    --muted-foreground: 195 10% 40%;
+    --accent: 175 88% 41%; /* Teal Horizon #0CC7BA */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 195 20% 85%;
+    --input: 195 20% 85%;
+    --ring: 195 75% 50%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 195 50% 5%;
+    --foreground: 195 10% 95%;
+    --card: 195 50% 8%;
+    --card-foreground: 195 10% 95%;
+    --popover: 195 50% 8%;
+    --popover-foreground: 195 10% 95%;
+    --primary: 195 75% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 195 30% 15%;
+    --secondary-foreground: 195 10% 95%;
+    --muted: 195 30% 15%;
+    --muted-foreground: 195 10% 60%;
+    --accent: 175 88% 41%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 195 30% 20%;
+    --input: 195 30% 20%;
+    --ring: 195 75% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline tracking-tight;
+  }
+}
